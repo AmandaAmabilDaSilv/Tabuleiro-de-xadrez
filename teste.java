@@ -3,6 +3,7 @@ void main(){
     linha = IO.readln("Quantas Colunas: ");
     String[] partes = linha.split(" ");
 
+    int tabuleiro = 0;
 
     int coluna = Integer.parseInt(partes[0]);
 
@@ -12,11 +13,24 @@ void main(){
 
        } else{
 
-        int tabuleiro = coluna * 2;
-
+         tabuleiro = coluna * 2;
+          
     IO.println("A quantidade de quadradinhos do tabuleiro com base no número de colunas é: " + tabuleiro);
-
+         
        };
+      
+    int quadradinhos = tabuleiro;
+    while ( quadradinhos > 0 ){
+         int i = 0;
+
+         IO.println("*");
+         
+         quadradinhos = quadradinhos - 1;
+         i = i + 1;
+
+    }
+
+   
     
 
 
